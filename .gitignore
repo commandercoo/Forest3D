@@ -38,7 +38,7 @@ forest3d.yaml
 *.log
 
 # Generated outputs
-models/
-worlds/
-Blender-Assets/*.blend
-Blender-Assets/**/*.blend
+# models/
+# worlds/
+# Blender-Assets/*.blend
+# Blender-Assets/**/*.blend
