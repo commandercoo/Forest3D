@@ -52,6 +52,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxcb-shape0 \
     mesa-utils \
     && rm -rf /var/lib/apt/lists/*
+RUN pip install --no-cache-dir "numpy==1.26.4"
 
 # Add OSRF repository for Gazebo Harmonic
 RUN curl -fsSL https://packages.osrfoundation.org/gazebo.gpg -o /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg && \
