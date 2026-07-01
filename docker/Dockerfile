@@ -89,7 +89,8 @@ COPY --chown=forest3d:forest3d . /home/forest3d/forest3d-src
 # Upgrade pip and install Forest3D
 RUN pip3 install --no-cache-dir --upgrade pip && \
     pip3 install --no-cache-dir /home/forest3d/forest3d-src && \
-    pip3 install --no-cache-dir pygdal==$(gdal-config --version).* || true
+    pip3 install --no-cache-dir pygdal==$(gdal-config --version).* || true && \
+    pip3 install --no-cache-dir 'numpy==1.26.4'
 
 USER forest3d
 
