@@ -1,0 +1,1 @@
+docker run -v $(pwd):/workspace forest3d terrain --dem ./dem/terrain.tif
